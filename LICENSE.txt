@@ -1,0 +1,42 @@
+FILE ORGANIZER — SOFTWARE LICENSE AGREEMENT
+===========================================
+
+Copyright (c) 2026 Zubair. All rights reserved.
+
+1. LICENSE GRANT
+   This software (the "Software") is licensed, not sold. You are granted a
+   non-exclusive, non-transferable license to install and use the Software for
+   personal or business purposes on the operating systems you have purchased a
+   license for (Windows, macOS, and/or Linux).
+
+2. RESTRICTIONS
+   You may NOT:
+   - redistribute, resell, sublicense, or re-package the Software, in whole or
+     in part, without prior written permission;
+   - decompile, reverse engineer, or otherwise attempt to derive source code,
+     except where permitted by applicable law;
+   - remove or alter any copyright or trademark notices.
+
+3. OWNERSHIP
+   The Software and all intellectual property rights remain the sole property of
+   the author (Zubair). This Agreement grants you a license to use the Software,
+   not ownership of it.
+
+4. NO WARRANTY
+   The Software is provided "AS IS", without warranty of any kind, express or
+   implied, including but not limited to the warranties of merchantability and
+   fitness for a particular purpose. You use the Software at your own risk.
+
+5. LIMITATION OF LIABILITY
+   In no event shall the author be liable for any damages arising out of the use
+   or inability to use the Software, including loss of data or interruption of
+   business — even if the author has been advised of the possibility of such
+   damages.
+
+6. TERMINATION
+   This license is effective until terminated. It terminates automatically upon
+   breach of any term. Upon termination, you must delete all copies of the
+   Software.
+
+If you have questions, or wish to purchase a distribution license to sell the
+Software, contact the author.

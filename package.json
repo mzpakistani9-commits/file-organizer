@@ -1,0 +1,129 @@
+{
+  "name": "file-organizer",
+  "version": "1.0.0",
+  "description": "Drag-and-drop file organizer with rule-based automation and one-click auto-organize by type.",
+  "author": {
+    "name": "Zubair",
+    "email": "zubair@localhost"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "main.js",
+  "homepage": "./",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "electron-is-dev": "^2.0.0",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-icons": "python3 scripts/make_icons.py",
+    "electron-dev": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "npm run react-build && electron-builder",
+    "electron-pack:win": "npm run react-build && electron-builder --win",
+    "electron-pack:mac": "npm run react-build && electron-builder --mac",
+    "electron-pack:linux": "npm run react-build && electron-builder --linux",
+    "start": "electron .",
+    "build": "npm run react-build && npm run electron-pack"
+  },
+  "build": {
+    "appId": "com.fileorganizer.app",
+    "extends": null,
+    "productName": "File Organizer",
+    "copyright": "Copyright (c) 2026 Zubair. All rights reserved.",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "artifactName": "${productName}-Setup-${version}-${os}-${arch}.${ext}",
+    "files": [
+      "main.js",
+      "preload.js",
+      "build/**/*"
+    ],
+    "asar": true,
+    "compression": "maximum",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico",
+      "publisherName": "File Organizer",
+      "artifactName": "${productName}-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "File Organizer",
+      "uninstallDisplayName": "File Organizer",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "license": "LICENSE.txt"
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}-${arch}.${ext}"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.productivity",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "dmg": {
+      "title": "${productName} ${version}",
+      "icon": "assets/icon.icns",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
+      "executableName": "file-organizer",
+      "synopsis": "Drag-and-drop file organizer",
+      "description": "Tidy up folders with drag-and-drop moves, rule-based automation, and one-click auto-organize by file type.",
+      "category": "Utility",
+      "maintainer": "Zubair <zubair@localhost>",
+      "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+    },
+    "appImage": {
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "deb": {
+      "priority": "optional"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
