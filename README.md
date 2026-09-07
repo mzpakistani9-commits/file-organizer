@@ -4,6 +4,8 @@ A cross-platform drag-and-drop file organizer with rule-based automation and **o
 
 Sorts a messy folder into clean, automatically-named folders (`Images`, `Documents`, `01_Images`, `02_pdf`, …) with zero setup — or with your own custom rules.
 
+> **Automation angle:** this is a practical rule-engine for a real-world pain point (folder chaos). The rule system (extension / regex / type → target) mirrors how workflow-automation tools chain "when X → do Y" logic — the same thinking used in n8n/Make/Zapier automation builds.
+
 ## Features
 
 - ⚡ **Auto Organize (no rules needed)** — pick a scheme, click one button:
