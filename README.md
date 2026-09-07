@@ -2,6 +2,8 @@
 
 A cross-platform drag-and-drop file organizer with rule-based automation and **one-click auto-organize by file type**. Built with Electron + React.
 
+[![CI](https://github.com/mzpakistani9-commits/file-organizer/actions/workflows/ci.yml/badge.svg)](https://github.com/mzpakistani9-commits/file-organizer/actions)
+
 Sorts a messy folder into clean, automatically-named folders (`Images`, `Documents`, `01_Images`, `02_pdf`, …) with zero setup — or with your own custom rules.
 
 > **Automation angle:** this is a practical rule-engine for a real-world pain point (folder chaos). The rule system (extension / regex / type → target) mirrors how workflow-automation tools chain "when X → do Y" logic — the same thinking used in n8n/Make/Zapier automation builds.
@@ -58,3 +60,7 @@ Proprietary — see [LICENSE.txt](LICENSE.txt). Selling/redistribution requires 
 
 - Issues: https://github.com/mzpakistani9-commits/file-organizer/issues
 - Email: mzpakistani9@gmail.com
+
+---
+
+Built by **[Muhammad Zubair](https://github.com/mzpakistani9-commits)** — Clinical psychologist → AI builder. Part of an [AI-specialist portfolio](https://github.com/mzpakistani9-commits).
